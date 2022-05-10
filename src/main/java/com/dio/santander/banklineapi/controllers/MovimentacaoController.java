@@ -37,7 +37,7 @@ public class MovimentacaoController {
 	}
 
 	@PostMapping
-	public void save( /* @RequestBody*/ NovaMovimentacao movimentacao) {
+	public void save( @RequestBody NovaMovimentacao movimentacao) {
 		service.save(movimentacao);
 	}
 }
